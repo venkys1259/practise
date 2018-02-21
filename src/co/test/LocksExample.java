@@ -8,20 +8,20 @@ public class LocksExample {
 	public static void main(String[] args) {
 		
 		Lock machine = new ReentrantLock();
-		Person p1 = new Person(machine,"venky");
+		/*Person p1 = new Person(machine,"venky");
 		Person p2 = new Person(machine,"chintu");
 		Person p3 = new Person(machine,"latha");
 		p1.start();
 		p2.start();
-		p3.start();
+		p3.start();*/
 
 	}
 
 }
-class Person extends  Thread {
+/*class Person1 extends  Thread {
 	Lock machine;
 	String name;
-	Person(Lock machine, String name){
+	Person1(Lock machine, String name){
 		this.machine = machine;
 		this.name = name;
 	}
@@ -32,5 +32,5 @@ class Person extends  Thread {
 		this.machine.unlock();
 		System.out.println(this.name + "Job is done");
 		
-	}
-}
+	}*/
+
